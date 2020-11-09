@@ -7,3 +7,7 @@
 .post-date{
   color: gray;
 }
+/*既読の時にグレーに背景色を変える*/
+div[data-check="true"] {
+  background:#585555;
+}
