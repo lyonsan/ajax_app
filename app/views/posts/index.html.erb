@@ -3,6 +3,9 @@
   <%= form.text_field :content %>
   <%= form.submit '投稿する' , id: "submit" %>
 <% end %>
+
+<div id="list">
+</div>
 <% @posts.each do |post| %>
   <!--メモのidとメモの既読状態が両方必要なので取得している-->
   <div class="post" data-id = <%= post.id %> data-check= <%= post.checked %>>
